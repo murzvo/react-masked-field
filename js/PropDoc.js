@@ -10,17 +10,20 @@ export default class PropDoc extends React.Component {
     optional: React.PropTypes.bool,
     defaultVal: React.PropTypes.string
   };
+  
   render() {
     return (
       <div className="form-group">
         <label>{this.props.name}</label>
-        <div className="code-group">
-          <code>
-            {this.props.type}
-            {this._renderOptional()}
-          </code>
-          {this._renderDefault()}
-        </div>
+        <pre>
+          <div className="code-group">
+            <code>
+              {this.props.type}
+              {this._renderOptional()}
+            </code>
+            {this._renderDefault()}
+          </div>
+        </pre>  
         <p>
           {this.props.children}
         </p>
@@ -29,7 +32,7 @@ export default class PropDoc extends React.Component {
   }
   _renderOptional() {
     if (this.props.optional) {
-      return <span className="attribute"> optional</span>;
+      return <span className="optional"> optional</span>;
     }
   }
   _renderDefault() {

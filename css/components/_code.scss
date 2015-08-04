@@ -1,0 +1,35 @@
+@import "colors";
+@import "mixins";
+
+// Code
+pre {
+	background-color: inherit;
+	border: none;
+	margin: 0;	
+	padding: 1em 0;
+	code {
+		background-color: transparent;
+		color: $code-font-normal;
+		padding: 0;
+		margin-top: 1em;
+		span.hljs-keyword,
+		.keyword {
+			color: $code-font-variable;
+		}
+		span.hljs-built_in,
+		span.hljs-attribute,
+		.attribute,
+		.built_in {
+			color: $code-font-attribute;
+		}
+		span.hljs-string,
+		span.hljs-value,
+		.string,
+		.value {
+			color: $code-font-value;
+		}
+		.optional {
+			color: $code-font-optional;
+		}
+	}	
+}

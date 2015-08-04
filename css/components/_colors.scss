@@ -56,9 +56,16 @@ $blue-400: #438D9E;
 $blue-500: #3B7D8F;
 
 // Aqua Scale
-$aqua-200: #7BD6CF;
-$aqua-400: #45AFAA; 
-$aqua-500: #389B99;
+$aqua-50:		#CEF2EE;
+$aqua-100:	#A7E8E4;
+$aqua-200:	#7BD6CF;
+$aqua-300:	#4CBFB9;
+$aqua-400:	#45AFAA;
+$aqua-500:	#389b99;
+$aqua-600:	#308783;
+$aqua-700:	#307773;
+$aqua-800:	#1D5B58;
+$aqua-900:	#1D4441;
 
 // Red Scale
 $red-500: #CC4934;
@@ -85,10 +92,13 @@ $primary-background-color: $green-100;
 $secondary-background-color: $grey-300;
 
 // Default Project
-$project-detail-background: $grey-100;
+$project-detail-background: $grey-50;
 
 // Default Project Detail
-$code-font-normal: $grey-600;
-$code-font-variable: $blue-400;
-$code-font-method: $aqua-400;
-$code-font-attribute: $red-500;
+$code-font-normal: $grey-800;
+$code-font-variable: $red-500;
+$code-font-attribute: $blue-400;
+$code-font-value: $aqua-300;
+$code-font-optional: $carrot-500;
+
+

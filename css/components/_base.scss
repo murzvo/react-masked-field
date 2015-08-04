@@ -144,24 +144,6 @@ ul.project-nav {
 	}
 }
 
-pre {
-	code {
-		background-color: transparent;
-		color: $code-font-normal;
-		padding: 0;
-		margin-top: 1em;
-		span.hljs-keyword {
-			color: $code-font-variable;
-		}
-		span.hljs-built_in {
-			color: $code-font-method;
-		}
-		span.hljs-string {
-			color: $code-font-attribute;
-		}
-	}	
-}
-
 // Footer
 .footer {
 	position: absolute;

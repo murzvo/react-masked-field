@@ -4,7 +4,7 @@
 
 #home {
 	.jumbotron {
-		background: url("../css/assets/ZP-background-playground.svg") bottom repeat-x, 
+		background: url("../css/assets/ZP-background-playground.svg") bottom no-repeat, 
 		linear-gradient(to bottom, $green-400 0%,$green-200 46%,$white 100%);
 	}
 }
@@ -61,7 +61,7 @@ ul.project-list {
 
 #react-masked-field {
 	.jumbotron {
-		background: url("../css/assets/ZP-background-swingset.svg") bottom repeat-x, 
+		background: url("../css/assets/ZP-background-swingset.svg") bottom no-repeat, 
 		linear-gradient(to bottom, $canary-800 0%,$canary-500 46%,$white 100%);
 	}
 }

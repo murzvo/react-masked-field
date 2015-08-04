@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,500);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,500);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,500);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,500);
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal; }
@@ -120,7 +121,7 @@ ul.project-nav li {
     padding: 10em; }
 
 .project-box .project-detail {
-  background-color: #F0F0EE;
+  background-color: #F7F7F6;
   min-height: 320px;
   padding: 2em 3em;
   margin-bottom: 150px;
@@ -128,18 +129,6 @@ ul.project-nav li {
   font-weight: 300; }
   .project-box .project-detail h4 {
     padding-bottom: 0.5em; }
-
-pre code {
-  background-color: transparent;
-  color: #6E6E67;
-  padding: 0;
-  margin-top: 1em; }
-  pre code span.hljs-keyword {
-    color: #438D9E; }
-  pre code span.hljs-built_in {
-    color: #45AFAA; }
-  pre code span.hljs-string {
-    color: #CC4934; }
 
 .footer {
   position: absolute;
@@ -176,6 +165,44 @@ pre code {
         background: transparent; }
     .navbar-default .navbar-collapse ul.social-media {
       display: none; } }
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100; }
+
+p {
+  font-weight: 300;
+  line-height: 1.5em; }
+
+pre {
+  background-color: inherit;
+  border: none;
+  margin: 0;
+  padding: 1em 0; }
+  pre code {
+    background-color: transparent;
+    color: #3F3F39;
+    padding: 0;
+    margin-top: 1em; }
+    pre code span.hljs-keyword,
+    pre code .keyword {
+      color: #CC4934; }
+    pre code span.hljs-built_in,
+    pre code span.hljs-attribute,
+    pre code .attribute,
+    pre code .built_in {
+      color: #438D9E; }
+    pre code span.hljs-string,
+    pre code span.hljs-value,
+    pre code .string,
+    pre code .value {
+      color: #4CBFB9; }
+    pre code .optional {
+      color: #E68B46; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal; }
