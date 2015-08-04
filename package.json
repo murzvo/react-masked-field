@@ -34,8 +34,9 @@
   },
   "homepage": "https://github.com/ZenPayroll/react-masked-field",
   "browserify": {
-    "transform": [
-      "babelify"
-    ]
+    "transform": [[
+      "babelify",
+      { "stage": 0 }
+    ]]
   }
 }

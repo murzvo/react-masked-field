@@ -4,6 +4,10 @@ import React from 'react';
 import cx from 'classnames';
 
 export default class ProjectBox extends React.Component {
+  static propTypes = {
+    defaultTab: React.PropTypes.string.isRequired,
+    children: React.PropTypes.node
+  };
   constructor(props) {
     super(props);
     this.state = { activeTab: props.defaultTab };
@@ -39,8 +43,3 @@ export default class ProjectBox extends React.Component {
     );
   }
 }
-
-ProjectBox.propTypes = {
-  defaultTab: React.PropTypes.string.isRequired,
-  children: React.PropTypes.node
-};

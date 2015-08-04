@@ -3,6 +3,13 @@
 import React from 'react';
 
 export default class PropDoc extends React.Component {
+  static propTypes = {
+    name: React.PropTypes.string.isRequired,
+    type: React.PropTypes.string.isRequired,
+    children: React.PropTypes.node.isRequired,
+    optional: React.PropTypes.bool,
+    defaultVal: React.PropTypes.string
+  };
   render() {
     return (
       <div className="form-group">
@@ -38,11 +45,3 @@ export default class PropDoc extends React.Component {
     }
   }
 }
-
-PropDoc.propTypes = {
-  name: React.PropTypes.string.isRequired,
-  type: React.PropTypes.string.isRequired,
-  children: React.PropTypes.node.isRequired,
-  optional: React.PropTypes.bool,
-  defaultVal: React.PropTypes.string
-};
