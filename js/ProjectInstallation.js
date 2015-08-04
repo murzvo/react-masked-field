@@ -8,7 +8,7 @@ export default class ProjectInstallation extends React.Component {
       <div>
         <h4>Installation</h4>
         <p>A standalone build is also available in the dist folder.</p>
-        <code>npm install react-masked-field</code>
+        <pre><code>npm install react-masked-field</code></pre>
       </div>
     );
   }

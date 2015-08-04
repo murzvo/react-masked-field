@@ -1,6 +1,14 @@
 @import "import_all_styles";
 
 // Home Page
+
+#home {
+	.jumbotron {
+		background: url("../css/assets/ZP-background-playground.svg") bottom repeat-x, 
+		linear-gradient(to bottom, $green-400 0%,$green-200 46%,$white 100%);
+	}
+}
+
 .message {
 	img {
 		padding-top: 15px;
@@ -48,3 +56,24 @@ ul.project-list {
 		width: 80px;
 	}
 }
+
+// Project 1
+
+#react-masked-field {
+	.jumbotron {
+		background: url("../css/assets/ZP-background-swingset.svg") bottom repeat-x, 
+		linear-gradient(to bottom, $canary-800 0%,$canary-500 46%,$white 100%);
+	}
+}
+
+.react-masked-field-demo {
+	display: block;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	width: 50%;
+}
+
+// Project 2
