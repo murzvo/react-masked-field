@@ -3,14 +3,11 @@
 import React from 'react';
 import cx from 'classnames';
 
-export default React.createClass({
-  propTypes: {
-    defaultTab: React.PropTypes.string.isRequired,
-    children: React.PropTypes.node
-  },
-  getInitialState() {
-    return { activeTab: this.props.defaultTab };
-  },
+export default class ProjectBox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { activeTab: props.defaultTab };
+  }
   render() {
     const links = [];
     const tabs = [];
@@ -41,4 +38,9 @@ export default React.createClass({
       </div>
     );
   }
-});
+}
+
+ProjectBox.propTypes = {
+  defaultTab: React.PropTypes.string.isRequired,
+  children: React.PropTypes.node
+};

@@ -4,7 +4,7 @@ import React from 'react';
 import hljs from 'highlight.js';
 import PropDoc from './PropDoc';
 
-export default React.createClass({
+export default class ProjectProps extends React.Component {
   render() {
     const defaultTranslations = hljs.highlight('javascript',
     `{
@@ -42,4 +42,4 @@ export default React.createClass({
       </div>
     );
   }
-});
+}

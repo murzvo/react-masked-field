@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         browserify: {
           app: {
             src: 'js/main.js',
-            dest: 'js/app.js',
+            dest: 'build/app.js',
             options: {
               watch: true,
               browserifyOptions: {

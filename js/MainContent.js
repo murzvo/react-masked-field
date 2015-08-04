@@ -7,7 +7,7 @@ import ProjectInstallation from './ProjectInstallation';
 import ProjectExample from './ProjectExample';
 import ProjectProps from './ProjectProps';
 
-export default React.createClass({
+export default class MainContent extends React.Component {
   render() {
     return (
       <div className="row">
@@ -30,4 +30,4 @@ export default React.createClass({
       </div>
     );
   }
-});
+}

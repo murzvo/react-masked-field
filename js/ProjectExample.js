@@ -15,7 +15,7 @@ React.render(
   document.getElementById('demo')
 );`;
 
-export default React.createClass({
+export default class ProjectExample extends React.Component {
   // render() {
   //   return (
   //     <div>
@@ -56,10 +56,10 @@ export default React.createClass({
   // }
   componentDidMount() {
     this._highlightCode();
-  },
+  }
   componentDidUpdate() {
     this._highlightCode();
-  },
+  }
   render() {
     return (
       <div>
@@ -67,8 +67,8 @@ export default React.createClass({
         <pre><code className="javascript">{EXAMPLE_CODE}</code></pre>
       </div>
     );
-  },
-  _highlightCode: function () {
+  }
+  _highlightCode() {
     hljs.highlightBlock(React.findDOMNode(this).querySelector('code'));
   }
-});
+}
