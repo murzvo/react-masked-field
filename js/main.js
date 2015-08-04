@@ -1,23 +1,9 @@
-$(document).ready(function(){
+'use strict';
 
-	$('li.tab').bind('click',function(){
-			$('.project-detail').each(function(){
-			$(this).addClass('hidden');
-	});
-			
-	var id = $(this).attr('id');
-			$('#project-'+id).removeClass('hidden');
-	});
+import React from 'react';
+import MainContent from './MainContent';
 
-	var MaskedField = window.MaskedField;
-
-	function handleComplete(date) {
-	  console.log('Date is ' + date);
-	}
-
-	React.render(
-	  React.createElement(MaskedField, {mask: '99/99/9999'}),
-	  $('.react-masked-field-demo')[0]
-	);
-
-});
+React.render(
+  <MainContent />,
+  document.getElementById('main-content')
+);
