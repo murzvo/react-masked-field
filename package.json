@@ -1,42 +1,49 @@
 {
   "name": "react-masked-field",
-  "version": "1.0.0",
-  "description": "react-masked-field ============",
-  "main": "Gruntfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "babel-eslint": "^4.0.5",
-    "babelify": "^6.1.3",
-    "classnames": "^2.1.3",
-    "eslint": "^1.0.0",
-    "eslint-plugin-react": "^3.0.0",
-    "grunt": "^0.4.5",
-    "grunt-browserify": "^4.0.0",
-    "grunt-contrib-haml": "^0.2.0",
-    "grunt-contrib-sass": "^0.7.3",
-    "grunt-contrib-watch": "^0.6.1",
-    "highlight.js": "^8.7.0",
-    "react": "^0.13.3",
-    "react-masked-field": "ZenPayroll/react-masked-field"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint js/*"
-  },
+  "description": "A masked field component built in React",
+  "version": "0.1.3",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZenPayroll/react-masked-field"
+    "url": "https://github.com/ZenPayroll/react-masked-field.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ZenPayroll/react-masked-field/issues"
+  "main": "src/MaskedField.js",
+  "files": [
+    "demo/",
+    "src/"
+  ],
+  "peerDependencies": {
+    "react": "^0.13.3"
   },
-  "homepage": "https://github.com/ZenPayroll/react-masked-field",
+  "dependencies": {
+    "babelify": "^6.1.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "browserify": "^11.0.0",
+    "chai": "^3.2.0",
+    "eslint": "^0.24.1",
+    "eslint-plugin-react": "^3.0.0",
+    "karma": "^0.13.2",
+    "karma-browserify": "^4.2.1",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "mocha": "^2.2.5",
+    "react": "^0.13.3",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0",
+    "uglify-js": "^2.4.23"
+  },
+  "scripts": {
+    "start": "karma start karma.dev.js",
+    "build": "./scripts/build.js",
+    "test": "karma start karma.ci.js",
+    "lint": "eslint ."
+  },
   "browserify": {
-    "transform": [[
-      "babelify",
-      { "stage": 0 }
-    ]]
+    "transform": [
+      "babelify"
+    ]
   }
 }
