@@ -44,6 +44,12 @@ const MaskedField = React.createClass({
       value: propsValue ? this._maskedValue(propsValue) : ''
     };
   },
+  componentWillReceiveProps(nextProps) {
+    if (this.props.mask !== nextProps.mask) {
+      this.setState({value: ''}, function () {this._buffer = this._initialBuffer()});
+      this._cursorPos = this._firstNonMaskIdx;
+    };
+  },
   componentDidUpdate() {
     if (this._cursorPos !== undefined) {
       this._setSelection(this._cursorPos);
